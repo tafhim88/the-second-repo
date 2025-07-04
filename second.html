@@ -12,12 +12,46 @@
             background-color: antiquewhite ;
             width: 30%;
         }
-        p{
+        #log{
             font-size: larger;
             font-style: italic;
-            background-color: rgb(191, 245, 245);
-            width: 30%;
+            background-color: rgb(144, 233, 233);
+            width: 150px;
+            text-decoration-line: underline ;
+            text-decoration-thickness: 2px;
+            text-decoration-color: rgb(61, 122, 122);
+            text-decoration-style: double;
+            font-size: 25px;
+            font-weight: 800;
 
+        }
+        input{
+            color: rgb(16, 35, 46);
+            border-radius: 2px;
+            box-shadow: 10px 5px 10px;
+            background: scroll;
+            text-decoration: solid;
+
+        }
+        select{
+            background-origin: padding-box;
+            background-color: rgb(112, 126, 138);
+            box-shadow: 10px 10px 10px;
+            background-position: 20px;
+            bottom: 100px;
+        }
+        #agree{
+            width: 170px;
+            background-color: rgb(237, 212, 173);
+            box-shadow: 10px 10px 10px;
+            margin: 30px 0px 0px 50px ;
+            padding: 10px;
+        }
+        .submit{
+            margin: 20px 20px 0px 100px;
+            color: rgb(58, 70, 81);
+            border-radius: 10px;
+            width: 90px;
         }
     </style>
 </head>
@@ -26,6 +60,23 @@
     <h3>try img</h3>
     <img width="100" src="image/IMG_20250621_175654.jpg" alt="">
     <img width="100" src="image/IMG_20250621_175658.jpg" alt="">
-    <p>this is rangamati</p>
+    <p id="log">please log-in</p>
+    <br>
+    <input type="text" placeholder="your e-mail">
+    <br>
+    <br>
+    <input type="password" placeholder="password" name="" id="">
+    <br>
+    <br>
+    <input type="number"  placeholder="contact number" id="">
+    <br>
+    <br>
+    <select name="" id="">
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="none">none</option>
+    </select>
+    <p id="agree">Are you agree with us?<input type="checkbox" name="" id=""></p>
+    <input class="submit" type="button" value="submit">
 </body>
 </html>
