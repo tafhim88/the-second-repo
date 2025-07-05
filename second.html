@@ -6,31 +6,45 @@
     <title>2nd repo trying</title>
     <style>
         body{
-            background-color: aliceblue;
+            background-color: rgb(209, 211, 201);
         }
-        h2{
+        h1{
             background-color: antiquewhite ;
-            width: 30%;
+            width: 180px;
+            margin-left: 30%;
+            box-shadow: 5px 5px 20px;
+            padding: 8px;
+            font-family:'serif';
+            border-radius: 10px;
+            
         }
         #log{
             font-size: larger;
             font-style: italic;
             background-color: rgb(144, 233, 233);
-            width: 150px;
+            width: 60%;
             text-decoration-line: underline ;
             text-decoration-thickness: 2px;
             text-decoration-color: rgb(61, 122, 122);
             text-decoration-style: double;
             font-size: 25px;
             font-weight: 800;
+            margin: 3% 20% 0% 20%;
 
+        }
+        #gender{
+            font-weight: 900;
+            font-size: large;
+            margin: 0% 0% 0.5% 0%;
         }
         input{
             color: rgb(16, 35, 46);
-            border-radius: 2px;
+            border-radius: 5px;
+            padding: 6px;
             box-shadow: 10px 5px 10px;
             background: scroll;
             text-decoration: solid;
+            margin-left: 10px;
 
         }
         select{
@@ -39,13 +53,16 @@
             box-shadow: 10px 10px 10px;
             background-position: 20px;
             bottom: 100px;
+            margin-left: 50px;
+            padding: 3px;
+            border-radius: 6px;
         }
         #agree{
-            width: 170px;
+            width: 180px;
             background-color: rgb(237, 212, 173);
             box-shadow: 10px 10px 10px;
             margin: 30px 0px 0px 50px ;
-            padding: 10px;
+            padding: 5px;
         }
         .submit{
             margin: 20px 20px 0px 100px;
@@ -53,15 +70,24 @@
             border-radius: 10px;
             width: 90px;
         }
+        div{
+            margin: 5px;
+            margin-left: 20px;
+            background-color: rgb(157, 210, 199);
+            
+        }
+        span{
+            color: rgb(218, 7, 7);
+        }
     </style>
 </head>
 <body>
-    <h2>second repo</h2>
-    <h3>try img</h3>
-    <img width="100" src="image/IMG_20250621_175654.jpg" alt="">
-    <img width="100" src="image/IMG_20250621_175658.jpg" alt="">
-    <p id="log">please log-in</p>
+    <h1>Tafhim Blog</h1>
+    <img width="100%" src="image/IMG_20250621_175654.jpg" alt="nature"><br>
+    <img width="100%" src="image/IMG_20250621_175658.jpg" alt="nature">
+    <p id="log"> journy with us? then why confusion? <span>let's go:-</span></p>
     <br>
+    <div>
     <input type="text" placeholder="your e-mail">
     <br>
     <br>
@@ -71,11 +97,13 @@
     <input type="number"  placeholder="contact number" id="">
     <br>
     <br>
+    <p id="gender">select your gender:</p>
     <select name="" id="">
         <option value="male">male</option>
         <option value="female">female</option>
         <option value="none">none</option>
     </select>
+    </div>
     <p id="agree">Are you agree with us?<input type="checkbox" name="" id=""></p>
     <input class="submit" type="button" value="submit">
 </body>
