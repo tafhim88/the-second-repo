@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/download.png" type="image/x-icon">
     <title>2nd repo trying</title>
+    
     <style>
         body{
-            background-color: rgb(209, 211, 201);
+            
+            background-color: rgba(192, 211, 115, 0.46);
+            
         }
         h1{
             background-color: antiquewhite ;
-            width: 180px;
-            margin-left: 30%;
+            display: block;
+            text-align: center;
+            *\width: 180px;
+            *\margin-left: 30%;
             box-shadow: 5px 5px 20px;
             padding: 8px;
             font-family:'serif';
@@ -19,25 +25,34 @@
             
         }
         #log{
+            text-align: center;
             font-size: larger;
             font-style: italic;
             background-color: rgb(144, 233, 233);
-            width: 60%;
+            *\width: 60%;
             text-decoration-line: underline ;
             text-decoration-thickness: 2px;
             text-decoration-color: rgb(61, 122, 122);
             text-decoration-style: double;
             font-size: 25px;
             font-weight: 800;
-            margin: 3% 20% 0% 20%;
-
+            padding-bottom: 10px;
+            border-bottom-right-radius: 70px;
+            border-top-left-radius: 70px;
+            box-shadow: 2px 2px 2px;
         }
-        #gender{
+        .gender{
+            border: 2px solid tomato;
             font-weight: 900;
             font-size: large;
             margin: 0% 0% 0.5% 0%;
+            border-radius: 10px;
+            padding-left: 3px;
+            border-bottom: 50px;
+            margin-right: 80%;
+            box-shadow: 1px 1px 2px;
         }
-        input{
+        .m{
             color: rgb(16, 35, 46);
             border-radius: 5px;
             padding: 6px;
@@ -50,17 +65,19 @@
         select{
             background-origin: padding-box;
             background-color: rgb(112, 126, 138);
-            box-shadow: 10px 10px 10px;
+            box-shadow: 3px 3px 10px;
             background-position: 20px;
             bottom: 100px;
-            margin-left: 50px;
+            margin-left: 60px;
             padding: 3px;
+            padding-left: 50px;
+            padding-right: 30px;
             border-radius: 6px;
         }
         #agree{
             width: 180px;
             background-color: rgb(237, 212, 173);
-            box-shadow: 10px 10px 10px;
+            box-shadow: 5px 5px 20px;
             margin: 30px 0px 0px 50px ;
             padding: 5px;
         }
@@ -72,13 +89,32 @@
         }
         div{
             margin: 5px;
-            margin-left: 20px;
+            margin-left: 0px;
+            padding-left: 10px;
             background-color: rgb(157, 210, 199);
+            border-radius: 13px;
             
         }
         span{
             color: rgb(218, 7, 7);
         }
+        #roman{
+            background-color: rgb(139, 155, 171);
+            border-radius: 10PX;
+            padding-top: 10PX;
+            padding-bottom: 10PX;
+            text-shadow: 1px;
+            font-size: 15px;
+            font-weight: 800;
+        }
+        ul{
+            background-color: rgb(195, 184, 191);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 20px ;
+        }
+        
     </style>
 </head>
 <body>
@@ -87,17 +123,44 @@
     <img width="100%" src="image/IMG_20250621_175658.jpg" alt="nature">
     <p id="log"> journy with us? then why confusion? <span>let's go:-</span></p>
     <br>
+    <h2>our visited place</h2>
+    <ul style="list-style: square;">
+        <li>Chapainwabgonj</li>
+        <li>Bogura</li>
+        <li>Joypurhat</li>
+        <li>Chitagong</li>
+        <li>cox bazar</li>
+        <li>Rangamati</li>
+    </ul>
+    <br>
+     <hr>
+     <hr>
+    <p><b><i><u>our next plan :-</u></i></b></p>
+    <ol  id="roman" style ="list-style-type: upper-roman;">
+        <li>Bandarban</li>
+        <li>Khagrachari</li>
+        <li>Sajek</li>
+        <li>Jaflong</li>
+        <li>Teknaf</li>
+        <li>saint martin</li>
+    </ol>
+    <hr>
+    <hr>
+
+    <h4>If you want to join with us, register now:</h4>
     <div>
-    <input type="text" placeholder="your e-mail">
+    <input class="m" type="text" placeholder="your e-mail">
     <br>
     <br>
-    <input type="password" placeholder="password" name="" id="">
+    <input class="m" type="password" placeholder="password" name="" id="">
     <br>
     <br>
-    <input type="number"  placeholder="contact number" id="">
+    <input class="m" type="number"  placeholder="contact number" id="">
     <br>
     <br>
-    <p id="gender">select your gender:</p>
+    <div>
+    <p class="gender">select your gender:</p>
+    </div>
     <select name="" id="">
         <option value="male">male</option>
         <option value="female">female</option>
